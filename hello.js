@@ -38,5 +38,28 @@ numbers.forEach((num) => {console.log(color.red(num + 1))});
 // const oddArray = isOdd(numbers);
 // console.log(oddArray);
 
+// ----------------------
+
 const easyOddArray = numbers.filter((num) => num % 2 !== 0 );
 console.log(easyOddArray);
+
+// MAP EXAMPLE
+function addOneMore(array, newArr = []) {
+    for (let i = 0; i < array.length; i++) {
+        newArr.push(array[i] + 1);
+    }
+    return newArr;
+}
+
+const NewArray = addOneMore(numbers);
+console.log(NewArray);
+
+const newNewArray = numbers.map((num) => num + 1);
+console.log(newNewArray);
+
+// ------------------------
+
+// REDUCE EXAMPLE
+
+const total = numbers.reduce((sum, num) => sum + num + 1);
+console.log(total);
