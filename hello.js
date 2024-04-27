@@ -63,3 +63,5 @@ console.log(newNewArray);
 
 const total = numbers.reduce((sum, num) => sum + num + 1);
 console.log(total);
+
+// testing new laptop to make sure connection is still good
